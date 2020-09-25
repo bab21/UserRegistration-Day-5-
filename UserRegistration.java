@@ -12,5 +12,14 @@ public class UserRegistration{
 	   Matcher m1=p.matcher(first_name);
 	   
 	   System.out.println("given word matches(true/false) : "+m1.matches());
+	   
+	   
+	   String pattern_last_name="[A-Z][a-z]{2,}";
+	   Pattern p2 = Pattern.compile(pattern_last_name); 
+	   
+	   String last_name=s.nextLine();
+	   Matcher m2=p.matcher(last_name);
+	   
+	   System.out.println("given word matches(true/false) : "+m2.matches());
 	}
 }
