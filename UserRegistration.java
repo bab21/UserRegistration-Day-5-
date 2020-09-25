@@ -10,6 +10,7 @@ public class UserRegistration{
 	   
 	   String first_name=s.nextLine();
 	   Matcher m1=p.matcher(first_name);
-	   System.out.println("given word matches(true/false):"+m1.matches());
+	   
+	   System.out.println("given word matches(true/false) : "+m1.matches());
 	}
 }
