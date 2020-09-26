@@ -5,21 +5,20 @@ public class UserRegistration{
 	public static void main(String[] args){
 	   Scanner s=new Scanner(System.in);
 		
-       String pattern_first_name="[A-Z][a-z]{2,}";
-	   Pattern p = Pattern.compile(pattern_first_name); 
-	   
-	   String first_name=s.nextLine();
-	   Matcher m1=p.matcher(first_name);
-	   
-	   System.out.println("given word matches(true/false) : "+m1.matches());
+	  
 	   
 	   
-	   String pattern_last_name="[A-Z][a-z]{2,}";
-	   Pattern p2 = Pattern.compile(pattern_last_name); 
+	   //email validatiom
 	   
-	   String last_name=s.nextLine();
-	   Matcher m2=p.matcher(last_name);
+	   String pattern_phone_number="[0-9]{2}[\\s][0-9]{10}";
+	   Pattern p4 = Pattern.compile(pattern_phone_number); 
+	   System.out.println("Enter your phone number with country code");
+	   String phone_number=s.nextLine();
+	   Matcher m4=p4.matcher(phone_number);
 	   
-	   System.out.println("given word matches(true/false) : "+m2.matches());
+	   System.out.println("given phone_number matches(true/false) : "+m4.matches());
+	  
+	   
+	   
 	}
 }
