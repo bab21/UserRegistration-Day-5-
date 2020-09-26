@@ -9,15 +9,16 @@ public class UserRegistration{
 	   
 	   
 	   //email validatiom
+	   String pattern_email="^[a-z0-9A-Z]+(([\\.+-][a-z0-9]{1,})?)+@[a-z0-9A-Z]+\\.([a-z]{2,6})+((\\.[a-zA-Z]{2,6})?)$";
 	   
-	   String pattern_password="(?=.*[0-9])(?=.*[A-Z]).{8,}";
-	  
-	   Pattern p6 = Pattern.compile(pattern_password); 
-	   System.out.println("Enter your password");
-	   String password=s.nextLine();
-	   Matcher m6=p6.matcher(password);
 	   
-	   System.out.println("given password matches(true/false) : "+m6.matches());
+	   
+	   Pattern p3= Pattern.compile(pattern_email); 
+	   System.out.println("Enter your email");
+	   String email=s.nextLine();
+	   Matcher m3=p3.matcher(email);
+	   
+	   System.out.println("given mail matches(true/false) : "+m3.matches());
 	   
 	  
 	   
