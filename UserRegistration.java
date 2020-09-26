@@ -10,13 +10,14 @@ public class UserRegistration{
 	   
 	   //email validatiom
 	   
-	   String pattern_phone_number="[0-9]{2}[\\s][0-9]{10}";
-	   Pattern p4 = Pattern.compile(pattern_phone_number); 
-	   System.out.println("Enter your phone number with country code");
-	   String phone_number=s.nextLine();
-	   Matcher m4=p4.matcher(phone_number);
+	   String pattern_password=".{8,}";
+	   Pattern p5 = Pattern.compile(pattern_password); 
+	   System.out.println("Enter your password");
+	   String password=s.nextLine();
+	   Matcher m5=p5.matcher(password);
 	   
-	   System.out.println("given phone_number matches(true/false) : "+m4.matches());
+	   System.out.println("given password matches(true/false) : "+m5.matches());
+	   
 	  
 	   
 	   
