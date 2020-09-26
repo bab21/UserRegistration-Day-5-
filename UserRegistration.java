@@ -10,13 +10,14 @@ public class UserRegistration{
 	   
 	   //email validatiom
 	   
-	   String pattern_password=".{8,}";
-	   Pattern p5 = Pattern.compile(pattern_password); 
+	   String pattern_password="(?=.*[A-Z]).{8,}";
+	  
+	   Pattern p6 = Pattern.compile(pattern_password); 
 	   System.out.println("Enter your password");
 	   String password=s.nextLine();
-	   Matcher m5=p5.matcher(password);
+	   Matcher m6=p6.matcher(password);
 	   
-	   System.out.println("given password matches(true/false) : "+m5.matches());
+	   System.out.println("given password matches(true/false) : "+m6.matches());
 	   
 	  
 	   
