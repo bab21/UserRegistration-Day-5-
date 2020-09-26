@@ -10,7 +10,7 @@ public class UserRegistration{
 	   
 	   //email validatiom
 	   
-	   String pattern_password="(?=.*[A-Z]).{8,}";
+	   String pattern_password="(?=.*[0-9])(?=.*[A-Z]).{8,}";
 	  
 	   Pattern p6 = Pattern.compile(pattern_password); 
 	   System.out.println("Enter your password");
